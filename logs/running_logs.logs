@@ -27,3 +27,172 @@
 [2024-06-19 20:28:21,823: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<<
 
  X============X]
+[2024-06-19 21:25:00,696: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:25:00,777: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:25:00,784: INFO: common: created directory at: artifacts]
+[2024-06-19 21:27:15,087: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:27:15,099: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:27:15,103: INFO: common: created directory at: artifacts]
+[2024-06-19 21:29:26,091: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:29:26,102: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:29:26,106: INFO: common: created directory at: artifacts]
+[2024-06-19 21:31:42,996: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:31:43,008: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:31:43,013: INFO: common: created directory at: artifacts]
+[2024-06-19 21:31:43,018: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:33:38,944: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:33:38,958: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:33:38,973: INFO: common: created directory at: artifacts]
+[2024-06-19 21:33:38,988: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:35:04,583: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:35:04,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:35:04,595: INFO: common: created directory at: artifacts]
+[2024-06-19 21:35:04,599: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:35:14,647: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-19 21:37:45,327: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:37:45,337: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:37:45,342: INFO: common: created directory at: artifacts]
+[2024-06-19 21:37:45,346: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:37:46,840: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-19 21:38:20,199: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:38:20,206: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:38:20,210: INFO: common: created directory at: artifacts]
+[2024-06-19 21:38:20,214: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:38:21,589: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-19 21:53:59,344: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-06-19 21:53:59,351: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:53:59,355: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:53:59,358: INFO: common: created directory at: artifacts]
+[2024-06-19 21:53:59,360: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-19 21:53:59,361: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-19 21:54:05,387: ERROR: main: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)]
+Traceback (most recent call last):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 748, in _error_catcher
+    yield
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 873, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 856, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\http\client.py", line 454, in read
+    n = self.readinto(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\http\client.py", line 498, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 1060, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 949, in read
+    data = self._raw_read(amt)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 902, in _raw_read
+    self._fp.close()
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 759, in _error_catcher
+    raise SSLError(e) from e
+urllib3.exceptions.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    obj.main()
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 26, in download_file
+    raise e
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 23, in download_file
+    gdown.download(prefix+file_id, zip_download_dir)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\gdown\download.py", line 368, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 828, in generate
+    raise RequestsSSLError(e)
+requests.exceptions.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+[2024-06-19 21:54:37,929: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-06-19 21:54:37,936: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:54:37,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:54:37,948: INFO: common: created directory at: artifacts]
+[2024-06-19 21:54:37,949: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-19 21:54:37,951: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-19 21:54:42,275: ERROR: main: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)]
+Traceback (most recent call last):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 748, in _error_catcher
+    yield
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 873, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 856, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\http\client.py", line 454, in read
+    n = self.readinto(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\http\client.py", line 498, in readinto
+    n = self.fp.readinto(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ssl.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 1060, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 949, in read
+    data = self._raw_read(amt)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 902, in _raw_read
+    self._fp.close()
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\urllib3\response.py", line 759, in _error_catcher
+    raise SSLError(e) from e
+urllib3.exceptions.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 10, in <module>
+    obj.main()
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 26, in download_file
+    raise e
+  File "c:\users\karti\onedrive\desktop\data sc\deep_learning_kidney_disease_classification\src\Kidney_Disease_Classification\components\data_ingestion.py", line 23, in download_file
+    gdown.download(prefix+file_id, zip_download_dir)
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\gdown\download.py", line 368, in download
+    for chunk in res.iter_content(chunk_size=CHUNK_SIZE):
+  File "C:\Users\karti\anaconda3\envs\kidney\lib\site-packages\requests\models.py", line 828, in generate
+    raise RequestsSSLError(e)
+requests.exceptions.SSLError: [SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2560)
+[2024-06-19 21:54:58,231: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<<<]
+[2024-06-19 21:54:58,237: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:54:58,243: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:54:58,247: INFO: common: created directory at: artifacts]
+[2024-06-19 21:54:58,248: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-19 21:54:58,251: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-06-19 21:55:03,760: INFO: data_ingestion: Download Successful from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into artifacts/data_ingestion/data.zip]
+[2024-06-19 21:55:05,687: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<<
+
+ X============X]
+[2024-06-19 21:55:05,688: INFO: main: >>>>> stage Prepare Base Model Stage started <<<<<<]
+[2024-06-19 21:55:05,694: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-19 21:55:05,700: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-19 21:55:05,702: INFO: common: created directory at: artifacts]
+[2024-06-19 21:55:05,704: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-06-19 21:55:07,271: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-06-19 21:55:08,032: INFO: main: >>>>>> stage Prepare Base Model Stage completed <<<<<<<<
+
+X========X]
